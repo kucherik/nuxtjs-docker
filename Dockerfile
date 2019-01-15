@@ -1,4 +1,4 @@
-FROM gerardojunior/node.environment:stable
+FROM gerardojunior/nodejs:stable
 LABEL maintainer="Gerardo Junior <me@gerardo-junior.com>"
 
 # Variables of nuxt configure
