@@ -1,6 +1,6 @@
 # Client building environment of nuxt project 
 
-[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/gerardojunior/nuxt.environment)
+[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/gerardojunior/nuxtjs)
 
 Docker image to run [nuxt.js](nuxtjs.org) projects
 
@@ -18,7 +18,7 @@ Docker image to run [nuxt.js](nuxtjs.org) projects
 ## Come on, do your tests
 
 ```bash
-docker pull gerardojunior/nuxt.environment:stable
+docker pull gerardojunior/nuxtjs:stable
 ```
 ## How to build
 
@@ -27,9 +27,9 @@ to build the image you need install the [docker engine](https://www.docker.com/)
 > You can try building with different versions of software with docker args, for example: NODE_VERISON=10.0.0
 
 ```bash
-git clone https://github.com/gerardo-junior/nuxt.environment.git
-cd nuxt.environment
-docker build . --tag gerardojunior/nuxt.environment
+git clone https://github.com/gerardo-junior/nuxtjs-docker.git
+cd nuxtjs-docker
+docker build . --tag gerardojunior/nuxtjs
 ```
 
 ## How to use
@@ -38,7 +38,7 @@ docker build . --tag gerardojunior/nuxt.environment
 
 ```bash
 # in your project folder
-docker run -it --rm -v $(pwd):/usr/share/src -p 3000:3000 gerardojunior/nuxt.environment:stable [command]
+docker run -it --rm -v $(pwd):/usr/share/src -p 3000:3000 gerardojunior/nuxtjs:stable [command]
 
 # or docker-compose
 docker-compose run nuxt [command]
@@ -51,7 +51,7 @@ Create the docker-compose.yml file  in your project folder with:
 # (...)
 
   nuxt:
-    image: gerardojunior/nuxt.environment:stable
+    image: gerardojunior/nuxtjs:stable
     restart: on-failure
     volumes:
       - type: bind
@@ -67,9 +67,9 @@ Create the docker-compose.yml file  in your project folder with:
 ## How to enter image shell
  
 ```bash
-docker run -it --rm gerardojunior/nuxt.environment /bin/sh
+docker run -it --rm gerardojunior/nuxtjs sh
 # or with docker-compose
-docker-compose run nuxt /bin/sh
+docker-compose run nuxt sh
 ```
 
 ### License  
