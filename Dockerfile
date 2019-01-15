@@ -6,4 +6,7 @@ ENV HOST 0.0.0.0
 
 EXPOSE 3000
 
-CMD ['start']
+# Copying scripts and setting entrypoint
+COPY ./tools/entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN sudo chmod +x /usr/local/bin/entrypoint.sh
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
