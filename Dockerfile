@@ -6,7 +6,6 @@ FROM gerardojunior/nodejs:$NODE_ENV
 LABEL maintainer="Gerardo Junior <me@gerardo-junior.com>"
 LABEL url="https://github.com/gerardo-junior/nuxtjs-docker.git"
 
-
 # Variables of nuxt configure
 ENV HOST 0.0.0.0
 ENV NUXT_PORT 3000 
