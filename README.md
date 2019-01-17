@@ -8,15 +8,15 @@
     [+] TELEGRAM:     @MrGerardoJunior
 ```
 
-[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/gerardojunior/nodejs)
+[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/gerardojunior/nuxtjs)
 
-Docker image to run [nuxt.js](nuxtjs.org) projects
+Docker image to run [nuxt.js](https://nuxtjs.org) projects
 
 > The project must be in the **/src** container folder 
 ## Tags available
 
 - [stable](https://github.com/gerardo-junior/nuxtjs-docker/blob/master/Dockerfile), [latest](https://github.com/gerardo-junior/nuxtjs-docker/blob/develop/Dockerfile), [1.0.0](https://github.com/gerardo-junior/nuxtjs-docker/blob/1.0.0/Dockerfile)
-  - [gerardojunior/nodejs](https://hub.docker.com/r/gerardojunior/nodejs) 1.0.0
+  - [gerardojunior/nodejs](https://hub.docker.com/r/gerardojunior/nuxtjs) 1.0.0
 
 ## Come on, do your tests
 
