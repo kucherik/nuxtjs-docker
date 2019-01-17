@@ -8,9 +8,9 @@
     [+] TELEGRAM:     @MrGerardoJunior
 ```
 
-[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/gerardojunior/nodejs)
+[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/gerardojunior/nuxtjs)
 
-Docker image to run [nuxt.js](nuxtjs.org) projects
+Docker image to run [nuxt.js](https://nuxtjs.org) projects
 
 > The project must be in the **/src** container folder 
 ## Tags available
