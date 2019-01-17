@@ -18,6 +18,7 @@ Docker image to run [nuxt.js](https://nuxtjs.org) projects
 - [stable](https://github.com/gerardo-junior/nuxtjs-docker/blob/master/Dockerfile), [latest](https://github.com/gerardo-junior/nuxtjs-docker/blob/develop/Dockerfile), [1.0.0](https://github.com/gerardo-junior/nuxtjs-docker/blob/1.0.0/Dockerfile)
   - [gerardojunior/nodejs](https://hub.docker.com/r/gerardojunior/nodejs) 1.0.0
     - [nodejs](https://nodejs.org) 8.15.0
+    - [yarn](https://yarnpkg.com/) 1.12.3
 
 ## Come on, do your tests
 
