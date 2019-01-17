@@ -1,19 +1,22 @@
-# Client building environment of nuxt project 
+# Environment of nuxt.js project 
 
-[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/gerardojunior/nuxtjs)
+```
+    [+] AUTOR:        Gerardo Junior
+    [+] SITE:         https://gerardo-junior.com
+    [+] EMAIL:        me@gerardo-junior.com
+    [+] GITHUB:       https://github.com/gerardo-junior/nodejs-docker.git
+    [+] TELEGRAM:     @MrGerardoJunior
+```
+
+[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/gerardojunior/nodejs)
 
 Docker image to run [nuxt.js](nuxtjs.org) projects
 
-> The project must be in the **/usr/local/src** container folder and will be available on port **:3000** of the container
-
+> The project must be in the **/src** container folder 
 ## Tags available
 
-- stable
-  - [node](https://nodejs.org/) 8.11.1 (carbon)
-  - [yarn](https://yarnpkg.com/) 1.5.1
-- latest
-  - [node](https://nodejs.org/) 8.11.1 (carbon)
-  - [yarn](https://yarnpkg.com/) 1.5.1
+- [stable](https://github.com/gerardo-junior/nodejs-docker/blob/master/Dockerfile), [latest](https://github.com/gerardo-junior/nodejs-docker/blob/develop/Dockerfile), [1.0.0](https://github.com/gerardo-junior/nodejs-docker/blob/1.0.0/Dockerfile)
+  - [node](https://nodejs.org/) 8.15.0
 
 ## Come on, do your tests
 
@@ -24,12 +27,10 @@ docker pull gerardojunior/nuxtjs:stable
 
 to build the image you need install the [docker engine](https://www.docker.com/) only
 
-> You can try building with different versions of software with docker args, for example: NODE_VERISON=10.0.0
+> You can try building with different versions of software with docker args, for example: NODE_ENV=1.0.0
 
 ```bash
-git clone https://github.com/gerardo-junior/nuxtjs-docker.git
-cd nuxtjs-docker
-docker build . --tag gerardojunior/nuxtjs
+docker build https://github.com/gerardo-junior/nuxtjs-docker.git --tag gerardojunior/nuxtjs
 ```
 
 ## How to use
@@ -38,7 +39,7 @@ docker build . --tag gerardojunior/nuxtjs
 
 ```bash
 # in your project folder
-docker run -it --rm -v $(pwd):/usr/share/src -p 3000:3000 gerardojunior/nuxtjs:stable [command]
+docker run -it --rm -v $(pwd):/src -p 3000:3000 gerardojunior/nuxtjs:stable [command]
 
 # or docker-compose
 docker-compose run nuxt [command]
@@ -56,7 +57,7 @@ Create the docker-compose.yml file  in your project folder with:
     volumes:
       - type: bind
         source: ./
-        target: /usr/share/src
+        target: /src
     ports:
       - 3000:3000
     #command: dev
