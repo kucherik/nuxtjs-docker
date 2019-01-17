@@ -4,7 +4,7 @@
     [+] AUTOR:        Gerardo Junior
     [+] SITE:         https://gerardo-junior.com
     [+] EMAIL:        me@gerardo-junior.com
-    [+] GITHUB:       https://github.com/gerardo-junior/nodejs-docker.git
+    [+] GITHUB:       https://github.com/gerardo-junior/nuxtjs-docker.git
     [+] TELEGRAM:     @MrGerardoJunior
 ```
 
@@ -15,8 +15,8 @@ Docker image to run [nuxt.js](nuxtjs.org) projects
 > The project must be in the **/src** container folder 
 ## Tags available
 
-- [stable](https://github.com/gerardo-junior/nodejs-docker/blob/master/Dockerfile), [latest](https://github.com/gerardo-junior/nodejs-docker/blob/develop/Dockerfile), [1.0.0](https://github.com/gerardo-junior/nodejs-docker/blob/1.0.0/Dockerfile)
-  - [node](https://nodejs.org/) 8.15.0
+- [stable](https://github.com/gerardo-junior/nuxtjs-docker/blob/master/Dockerfile), [latest](https://github.com/gerardo-junior/nuxtjs-docker/blob/develop/Dockerfile), [1.0.0](https://github.com/gerardo-junior/nuxtjs-docker/blob/1.0.0/Dockerfile)
+  - [gerardojunior/nodejs](https://hub.docker.com/r/gerardojunior/nodejs) 1.0.0
 
 ## Come on, do your tests
 
